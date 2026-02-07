@@ -13,3 +13,14 @@ Mình đam mê:
 3. Cai nghiện Dopamine bẩn.
 
 > "Hành trình vạn dặm bắt đầu từ một bước chân."
+---
+## 📝 Bài viết mới nhất
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <span style="font-size: small; color: #888;">({{ post.date | date: "%d/%m/%Y" }})</span>
+    </li>
+  {% endfor %}
+</ul>
